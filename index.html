@@ -27,31 +27,33 @@
             <div class="col-2 text-center mr-auto character-selectable" id="div-goku">
                 <p class="character-element">Goku</p>
                 <img class="character-element" src="./assets/images/goku.jpg"/>
-                <p id="health-goku">100 HP</p>
+                <p class="character-element health"> </p>
             </div>
 
             <div class="col-2 text-center mr-auto character-selectable" id="div-vegeta">
                 <p class="character-element">Vegeta</p>
                 <img class="character-element" src="./assets/images/vegeta.jpg"/>
-                <p class="character-element" id="health-vegeta">100 HP</p>
+                <p class="character-element health"> </p>
             </div>
             <div class="col-2 text-center mr-auto character-selectable" id="div-hit">
                 <p class="character-element">Hit</p>
                 <img class="character-element" src="./assets/images/hit.jpg"/>
-                <p class="character-element" id="health-hit">100 HP</p>
+                <p class="character-element health"> </p>
             </div>
             <div class="col-2 text-center mr-auto character-selectable" id="div-beerus">
                 <p class="character-element">Beerus</p>
                 <img class="character-element" src="./assets/images/beerus.jpg"/>
-                <p class="character-element" id="health-beerus">100 HP</p>
+                <p class="character-element health" id="health-beerus"> </p>
             </div>
         </div>
         <div class="row">
+
             <div class="col-12">
                 <h3>Your Character</h2>
             </div>
-            <div class="col-12 h-100 p-5" id="character-area">
-            </div>
+
+            <div class="col-12 h-100 p-5" id="character-area"> </div>
+
         </div>
 
         <div class="row" id="enemy-row">
@@ -59,18 +61,21 @@
                 <h3>Enemies Available to Attack</h3>
             </div>
         </div>
-            <div class="row">
-                    <div class="col-3">
-        
-                    </div>
-                    <div class="col-3">
-                        <button>Attack</button>
-                    </div>
-            </div> 
+
+        <div class="row mt-1 mb-3">
+            <div class="col-12">
+                <button id="attack-button">Attack</button>
+            </div>
+        </div> 
         
         <div class="row">
                 <div class="col-12">
                     <h3>Fight Section</h3>
+                </div>
+
+                <div class="col-12">
+                    <p id="fight-log"> </p>
+                    <p id="enemy-log"> </p>
                 </div>
         </div>
         <div class="row" id="defender-section">
