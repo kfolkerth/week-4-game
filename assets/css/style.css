@@ -1,4 +1,19 @@
-.character-selectable {
+#div-goku {
+    background-color: white;
+    border: solid 1px green;
+}
+
+#div-vegeta {
+    background-color: white;
+    border: solid 1px green;
+}
+
+#div-hit {
+    background-color: white;
+    border: solid 1px green;
+}
+
+#div-beerus {
     background-color: white;
     border: solid 1px green;
 }
