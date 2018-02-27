@@ -19,3 +19,7 @@ body {
     background-color: black;
     color: green;
 }
+
+.character-element {
+    max-width: 100%;
+}
