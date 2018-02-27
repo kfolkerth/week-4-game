@@ -3,6 +3,7 @@ body {
     color: orange;
     font-family: 'Ceviche One', cursive;
     font-size: 24px;
+    word-wrap: break-word;
 }
 
 .character-selectable {
