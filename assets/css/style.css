@@ -1,19 +1,21 @@
-#div-goku {
-    background-color: white;
-    border: solid 1px green;
+body {
+    background-image: url('../images/background.png');
+    color: orange;
+    font-family: 'Ceviche One', cursive;
+    font-size: 24px;
 }
 
-#div-vegeta {
+.character-selectable {
     background-color: white;
-    border: solid 1px green;
+    border: solid 2px rgb(125, 125, 240);
+    color: black;
 }
 
-#div-hit {
-    background-color: white;
-    border: solid 1px green;
+.enemy {
+    background-color: red;
 }
 
-#div-beerus {
-    background-color: white;
-    border: solid 1px green;
+.enemy-selected {
+    background-color: black;
+    color: green;
 }

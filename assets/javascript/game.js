@@ -64,18 +64,26 @@ var dragonBall = {
         dragonBall.goku.health = 150;
         dragonBall.goku.currentAttackPower = dragonBall.goku.baseAttackPower
         $(dragonBall.goku.icon).find(".health").text(dragonBall.goku.health + " HP");
+        $(dragonBall.goku.icon).removeClass("enemy");
+        $(dragonBall.goku.icon).removeClass("enemy-selected");
 
         dragonBall.vegeta.health = 120;
         dragonBall.vegeta.currentAttackPower = dragonBall.vegeta.baseAttackPower
         $(dragonBall.vegeta.icon).find(".health").text(dragonBall.vegeta.health + " HP");
+        $(dragonBall.vegeta.icon).removeClass("enemy");
+        $(dragonBall.vegeta.icon).removeClass("enemy-selected");
 
         dragonBall.hit.health = 130;
         dragonBall.hit.currentAttackPower = dragonBall.hit.baseAttackPower
         $(dragonBall.hit.icon).find(".health").text(dragonBall.hit.health + " HP");
+        $(dragonBall.hit.icon).removeClass("enemy");
+        $(dragonBall.hit.icon).removeClass("enemy-selected");
 
         dragonBall.beerus.health = 180;
         dragonBall.beerus.currentAttackPower = dragonBall.beerus.baseAttackPower;
         $(dragonBall.beerus.icon).find(".health").text(dragonBall.beerus.health + " HP");
+        $(dragonBall.beerus.icon).removeClass("enemy");
+        $(dragonBall.beerus.icon).removeClass("enemy-selected");
         
         allCharacterIcons.forEach(function(e) {
             $(e).show();
@@ -101,6 +109,7 @@ var dragonBall = {
                     dragonBall.enemies = [dragonBall.vegeta, dragonBall.hit, dragonBall.beerus];
                     dragonBall.enemies.forEach(function(element) {
                         $("#enemy-row").append($(element.icon));
+                        $(element.icon).toggleClass("enemy");
                         element.isEnemy = true;
                     });
                     break;
@@ -110,6 +119,7 @@ var dragonBall = {
                     dragonBall.enemies = [dragonBall.goku, dragonBall.hit, dragonBall.beerus];
                     dragonBall.enemies.forEach(function(element) {
                         $("#enemy-row").append($(element.icon));
+                        $(element.icon).toggleClass("enemy");
                         element.isEnemy = true;
                     });
                     break;
@@ -119,6 +129,7 @@ var dragonBall = {
                     dragonBall.enemies = [dragonBall.goku, dragonBall.vegeta, dragonBall.beerus];
                     dragonBall.enemies.forEach(function(element) {
                         $("#enemy-row").append($(element.icon));
+                        $(element.icon).toggleClass("enemy");
                         element.isEnemy = true;
                     });
                     break;
@@ -128,6 +139,7 @@ var dragonBall = {
                     dragonBall.enemies = [dragonBall.goku, dragonBall.vegeta, dragonBall.hit];
                     dragonBall.enemies.forEach(function(element) {
                         $("#enemy-row").append($(element.icon));
+                        $(element.icon).toggleClass("enemy");
                         element.isEnemy = true;
                     });
                     break;
@@ -143,21 +155,29 @@ var dragonBall = {
                     console.log("enemy is goku");
                     dragonBall.enemySelected = dragonBall.goku;
                     $("#defender-section").append($(dragonBall.enemySelected.icon));
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy");
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy-selected");
                     break;
                 case "div-vegeta":
                     console.log("enemy is vegeta");
                     dragonBall.enemySelected = dragonBall.vegeta;
                     $("#defender-section").append($(dragonBall.enemySelected.icon));
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy");
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy-selected");
                     break;
                 case "div-hit":
                     console.log("enemy is hit");
                     dragonBall.enemySelected = dragonBall.hit;
                     $("#defender-section").append($(dragonBall.enemySelected.icon));
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy");
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy-selected");
                     break;
                 case "div-beerus":
                     console.log("enemy is beerus");
                     dragonBall.enemySelected = dragonBall.beerus;
                     $("#defender-section").append($(dragonBall.enemySelected.icon));
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy");
+                    $(dragonBall.enemySelected.icon).toggleClass("enemy-selected");
                     break;
             }
         }
